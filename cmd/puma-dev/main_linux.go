@@ -10,8 +10,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/puma/puma-dev/dev"
-	"github.com/puma/puma-dev/homedir"
+	"github.com/enova/puma-dev/dev"
+	"github.com/enova/puma-dev/homedir"
 )
 
 var (

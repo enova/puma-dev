@@ -13,8 +13,8 @@ Pow doesn't support rack.hijack and thus not websockets and thus not actioncable
 
 ## Install
 
-* Via Homebrew is the easiest: `brew install puma/puma/puma-dev`
-* Or download the latest release from https://github.com/puma/puma-dev/releases
+* Via Homebrew is the easiest: `brew install puma/enova/puma-dev`
+* Or download the latest release from https://github.com/enova/puma-dev/releases
 * If you haven't run puma-dev before, run: `sudo puma-dev -setup` to configure some DNS settings that have to be done as root
 * Run `puma-dev -install` to configure puma-dev to run in the background on ports 80 and 443 with the domain `.dev`.
   * If you're currently using pow, puma-dev taking control of `.dev` will break it. If you want to just try out puma-dev and leave pow working, pass `-d pdev` on `-install` to use `.pdev` instead.
@@ -25,7 +25,7 @@ pow's uninstall script. Read more details in [the pow manual](http://pow.cx/manu
 ### Install on Linux
 
 * Puma-dev supports linux but requires additional installation to make all the features work.
-* You can either build from source or download a binary from https://github.com/puma/puma-dev/releases
+* You can either build from source or download a binary from https://github.com/enova/puma-dev/releases
 
 #### .dev domain
 
@@ -170,7 +170,7 @@ Creates links to app directories into your puma-dev directory (`~/.puma-dev` by 
 To build puma-dev, follow these steps:
 
 * Install golang (http://golang.org)
-* Run `go get github.com/puma/puma-dev/...`
+* Run `go get github.com/enova/puma-dev/...`
 * Run `$GOPATH/bin/puma-dev` to use your new binary
 
 Puma-dev uses gb (http://getgb.io) to manage dependencies, so if you're working on puma-dev and need to introduce a new dependency, run `gb vendor fetch <package path>` to pull it into `vendor/src`. Then you can use it from within `puma-dev/src`

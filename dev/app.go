@@ -16,8 +16,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/puma/puma-dev/linebuffer"
-	"github.com/puma/puma-dev/watch"
+	"github.com/enova/puma-dev/linebuffer"
+	"github.com/enova/puma-dev/watch"
 	"github.com/vektra/errors"
 	"gopkg.in/tomb.v2"
 )
