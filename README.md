@@ -96,6 +96,7 @@ By default, puma-dev uses the domain `.test` to manage your apps. If you want to
 
 Puma-dev supports loading environment variables before puma starts. It checks for the following files in this order:
 
+* `~/.powconfig`
 * `.env`
 * `.powrc`
 * `.powenv`
@@ -167,6 +168,10 @@ Puma-dev allows you to run multiple local domains. Handy if you're working with 
 ### Static file support
 
 Like pow, puma-dev support serving static files. If an app has a `public` directory, then any urls that match files within that directory are served. The static files have priority over the app.
+
+### Subdomains support
+
+Once a virtual host is installed, it's also automatically accessible from all subdomains of the named host. For example, a `myapp` virtual host could also be accessed at `http://www.myapp.test/` and `http://assets.www.myapp.test/`. You can override this behavior to, say, point `www.myapp.test` to a different application: just create another virtual host symlink named `www.myapp` for the application you want.
 
 ### Status API
 
